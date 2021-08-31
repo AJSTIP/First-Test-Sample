@@ -10,11 +10,19 @@ namespace First_Test_Sample
     {
         static void Main(string[] args)
         {
+            sampleCode();
+
+            Console.ReadKey();
+        }
+
+        static void sampleCode()
+        {
 
             Console.WriteLine("Hello World!");
             Console.WriteLine("Enter Name: ");
             string userName = Console.ReadLine();
             Console.WriteLine("Enter Age: ");
+
             int userAge = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine($"Name is: {userName}, Age is: {userAge}");
@@ -23,7 +31,7 @@ namespace First_Test_Sample
             Console.ReadLine();
 
             Console.WriteLine("How many hours of sleep did you get last night?");
-            
+
             int hoursOfSleep = Convert.ToInt32(Console.ReadLine());
 
             if (hoursOfSleep >= 8)
@@ -43,7 +51,7 @@ namespace First_Test_Sample
                 Console.WriteLine("I dont know what you wrote");
             }
 
-            Console.ReadKey();
         }
+
     }
 }
